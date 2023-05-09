@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px solid limegreen; */
+}
+
+/* @font-face {
+  font-family: Voyage;
+  src: url("https://2.dl.fontke.com/?file=voyage-bold2.ttf&hash=6geUHSaOiROwi0MZHl8FCSSc%2F13DmAIXwewiuMGvJzSVKqVOw1aqZmPozfAG8zx3JdTAdsx6hkw27L4rubkgCJULWyEjz7MOzB2kXDwTV14%3D");
+  font-weight: lighter;
+} */
+
+body {
+  background-image: linear-gradient(43deg,
+      #4158d0 0%,
+      #c850c0 50%,
+      #ffcc70 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+
+.bar-container {
+  display: none;
+}
+
+nav {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 100;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: start;
+  padding-left: 160px;
+}
+
+.text-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 300px 160px;
+}
+
+.container {
+  width: 480px;
+  padding: 90px 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 160px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.outer-card {
+  width: 400px;
+  height: 528px;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  transition: 1s ease;
+}
+
+.card:hover {
+  filter: none;
+}
+
+.card-text h1 {
+  color: white;
+  padding-top: 40px;
+  text-shadow: 2px 2px black;
+}
+
+.card-text p {
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.578);
+  word-spacing: 2px;
+}
+
+.card-text {
+  padding: 10px 20px;
+  text-align: center;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn {
+  margin-top: 40px;
+}
+
+.card-text a {
+  background: #ffffff;
+  padding: 15px 30px;
+  color: rgb(6, 6, 6);
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.465);
+}
+
+.card {
+  box-shadow: 2px 2px 15px 4px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.146);
+  font-family: "Poppins";
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: 0.5s ease;
+}
+
+.circle {
+  background: #000000ad;
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  position: relative;
+  left: 191px;
+  cursor: pointer;
+  bottom: 40px;
+}
+
+.arrow {
+  position: absolute;
+  top: 448px;
+  right: 80px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.bank-text-container {
+  /* margin-right: 90px; */
+  padding-left: 160px;
+  width: 800px;
+}
+
+.bank-text-container .bank0 {
+  font-size: 230px;
+  font-family: voyage;
+  color: aliceblue;
+  letter-spacing: 10px;
+}
+
+.bank-text-container h2 {
+  font-family: "Poppins";
+  margin-right: 20px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.542);
+  float: right;
+  color: #ffffff;
+}
+
+.dot {
+  color: black;
+  padding-right: 50px;
+}
+
+.bank {
+
+  color: rgba(0, 0, 0, 0.559);
+  bottom: 60px;
+  font-size: 170px;
+}
+
+.line {
+  background: #0000008a;
+  height: 0px;
+  width: 1.6px;
+  position: relative;
+  left: 128px;
+  transition: 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container-line:hover .line {
+  transform: rotateX(120deg);
+  height: 500px;
+}
+
+.container-line {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-right: 160px;
+
+}
+
+/* responsiveness */
+
+@media only screen and (max-width:800px) {
+
+  nav,
+  .navcontainer {
+    display: block;
+  }
+
+  nav ul li a {
+    transition: 1s ease-in-out;
+  }
+
+  .nav-links,
+  nav ul li {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0px;
+
+
+  }
+
+  .bar-container {
+    display: inline-block;
+  }
+
+  nav ul li a:hover {
+
+    color: rgb(72, 72, 72);
+    background: #ffffffab;
+    padding: 10px 20px;
+    /* filter: blur(1px); */
+    border-radius: 10px 10px;
+    position: relative;
+    bottom: 6px;
+  }
+
+  .nav-links {
+    display: grid;
+    justify-content: center;
+    transition: 1.5s ease;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+  }
+
+  .text-flex {
+    flex-wrap: wrap-reverse;
+    margin-top: 200px;
+  }
+
+  .flex-container {
+    padding: 0px;
+    margin-top: 80px;
+  }
+
+  .circle {
+    display: none;
+  }
+}

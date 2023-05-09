@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px solid limegreen; */
+}
+.bg-colour {
+  width: 100vw;
+  height: max-content;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.logo {
+  font-family: Voyage;
+}
+
+nav {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #ffffff15;
+  height: 100vh;
+  width: max-content;
+}
+
+nav ul li {
+  /* display: inline-block; */
+  font-family: "Poppins";
+  font-weight: 100;
+  list-style: none;
+  padding: 30px 20px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: rgba(240, 248, 255, 0.479);
+}
+
+nav a {
+  text-decoration: none;
+  color: antiquewhite;
+  transition: 0.8s ease;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.transaction-container {
+  margin: 30px 0px;
+  width: 100em;
+}
+
+.transfer-contain {
+  margin: 30px 0px;
+  background: #fbfbfb42;
+  color: rgba(0, 0, 0, 0.446);
+  font-family: "Poppins";
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5em 5em;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  align-items: center;
+  padding: 20px 80px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.transfer-contain:hover {
+  background: none;
+}
+
+.Sender {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.receiver {
+  padding-left: 50px;
+}
+
+.amount {
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.status {
+  color: rgb(137, 255, 137);
+  padding-left: 50px;
+}
+
+.t-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1-c {
+  margin: 0px 20px;
+}
+
+.head-bg {
+  background: #00000045;
+  cursor: pointer;
+  margin: 0px 30px;
+  border-radius: 30px;
+  padding: 25px 0px;
+}
+
+.head-t {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  color: rgba(255, 255, 255, 0.523);
+  font-family: "Poppins";
+  font-weight: 100;
+  justify-content: center;
+  grid-gap: 0em 6em;
+  margin: 100px 50px 0px 0px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.line-h {
+  width: 80em;
+  display: grid;
+  justify-content: center;
+  height: 5px;
+  background: #00000073;
+  border-radius: 50px;
+}

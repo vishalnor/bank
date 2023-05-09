@@ -1,0 +1,14 @@
+@font-face {
+  font-family: voyage;
+  src: url("voyage-bold2.ttf");
+  font-weight: bold;
+}
+
+body {
+  font-family: georgia;
+  color: green;
+}
+h1 {
+  font-family: voyage;
+  color: pink;
+}
