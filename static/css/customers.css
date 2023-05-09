@@ -203,6 +203,9 @@ input {
 }
 
 @media only screen and (max-width:800px) {
+  .aunter{
+    display:none;
+    }
 
   nav,
   .navcontainer {
