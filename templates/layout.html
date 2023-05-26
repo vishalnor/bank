@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .logo {
+        font-family: Voyage;
+      }
+
+      nav {
+        padding: 40px 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: #ffffff15;
+        height: 100vh;
+        width: max-content;
+      }
+
+      nav ul li {
+        /* display: inline-block; */
+        font-family: "Poppins";
+        font-weight: 100;
+        list-style: none;
+        padding: 30px 20px;
+        font-size: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navcontainer">
+      <div class="logo">
+        <h2>
+          <a href=""
+            ><img
+              src="{{ url_for('static', filename= 'images/logo.png')}}"
+              alt=""
+              width="250px"
+          /></a>
+        </h2>
+      </div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="{{ url_for('homePage')}}">Home</a></li>
+          <li>
+            <a href="{{ url_for('customersPage')}}">View all Customers</a>
+          </li>
+          <li>
+            <a href="{{ url_for('transactionPage')}}">All Transactions</a>
+          </li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+
+<div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+  <a itemprop='url' href=https://www.fiverr.com/vishalnor1 rel="nofollow" target="_blank" style='display: inline-block;'>
+     <div class='fiverr-seller-content' id='fiverr-seller-widget-content-d1e943cd-e478-4a7c-8fbe-fc5a71a2c28d' itemprop='contentURL' style='display: none;'></div>
+     <div id='fiverr-widget-seller-data' style='display: none;'>
+         <div itemprop='name' >vishalnor1</div>
+         <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+         <div itemprop='jobtitle'>Seller</div>
+         <div itemprop='description'>I'm a professionally trained Front-End Web Developer and WordPress website developer, Graphics Designer and Illustrator, I'm looking forward to helping you with: - Website Dovelopment - Fix Your Website - Wordpress Website - HTML & CSS - Website SEO - Graphic Designing - Web Designing - Illustrations - Cartoon Illustrations I'm leading an experienced girl with 5 years of experience in Web Developer, Graphics Designer and Illustrator. I always provide 24/7 support for my clients to make sure high growth for their online business. Feel free to contact us!</div>
+     </div>
+ </a>
+</div>
+
+<script id='fiverr-seller-widget-script-d1e943cd-e478-4a7c-8fbe-fc5a71a2c28d' src='https://widgets.fiverr.com/api/v1/seller/vishalnor1?widget_id=d1e943cd-e478-4a7c-8fbe-fc5a71a2c28d' data-config='{"category_name":"Programming \u0026 Tech"}' async='true' defer='true'></script>
+
+  </body>
+</html>

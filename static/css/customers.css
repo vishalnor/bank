@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px solid limegreen; */
+}
+
+body {
+  background-image: linear-gradient(43deg,
+      #4158d0 0%,
+      #c850c0 50%,
+      #ffcc70 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.logo-size {
+  width: 250px;
+}
+
+.logo {
+  font-family: Voyage;
+}
+
+nav {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #ffffff15;
+  min-height: 100vh;
+}
+
+nav ul li {
+  /* display: inline-block; */
+  font-family: "Poppins";
+  font-weight: 100;
+  list-style: none;
+  padding: 30px 20px;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.tandc-container {
+  display: flex;
+  align-items: center;
+}
+
+.person-text {
+  margin-left: 20px;
+  font-family: "Poppins";
+
+  font-size: 1.6em;
+  color: white;
+}
+
+.person-card {
+  margin: 3em 5em;
+  width: max-content;
+  width: 50em;
+  height: 28em;
+  background: #ffffff76;
+  border-radius: 20px;
+}
+
+.personflex {
+  display: flex;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.person-logo {
+  padding: 0px;
+  width: 55em;
+  height: 15em;
+}
+
+input {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0px 10px;
+}
+
+.input-m input {
+  border: 1px solid rgba(252, 252, 252, 0.553);
+  border-radius: 30px;
+  background: none;
+  transition: 1s ease;
+  width: 10em;
+  height: 3.5em;
+}
+
+.input-m {
+  margin: 20px 4px;
+  text-align: center;
+  transition: 1s ease;
+}
+
+.input-m:hover {
+  display: block;
+  background: #ffffff25;
+}
+
+.transfer-container {
+  background: #ffffff26;
+  border-radius: 20px;
+  width: 25em;
+  height: 28em;
+  overflow: hidden;
+}
+
+.listofsender {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #ff2fea22;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.listofsender:hover {
+  background: none;
+  color: rgba(255, 255, 255, 0.524);
+}
+
+.contentp {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listname {
+  transition: 1s ease;
+  position: relative;
+  right: -1000%;
+  overflow-y: auto;
+}
+
+.name1 {
+  margin: 20px 0px;
+  cursor: pointer;
+  font-family: "Poppins";
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-customers {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px 50px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.logo-p {
+  width: 8em;
+}
+
+.balance-div {
+  margin: 30px auto;
+}
+
+.customers-pfp:hover {
+  background: #ffb3b36b;
+}
+
+.customers-pfp {
+  border-radius: 30px;
+  padding: 15px 16px;
+  transition: 1s ease;
+  color: rgb(248, 248, 248);
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-acc {
+  text-align: center;
+  font-family: Poppins;
+  color: rgba(255, 255, 255, 0.484);
+  background: #00000045;
+  border-radius: 30px;
+  text-shadow: 1px 2px rgb(246, 246, 246);
+}
+
+@media only screen and (max-width:800px) {
+  .aunter {
+    display: none;
+  }
+
+  nav,
+  .navcontainer {
+    display: block;
+    min-height: 0;
+  }
+
+  nav ul li a {
+    transition: 1s ease-in-out;
+  }
+
+  nav ul li {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0px;
+
+
+  }
+
+  .bar-container {
+    display: inline-block;
+  }
+
+  nav ul li a:hover {
+
+    color: rgb(72, 72, 72);
+    background: #ffffffab;
+    padding: 10px 20px;
+    /* filter: blur(1px); */
+    border-radius: 10px 10px;
+    position: relative;
+    bottom: 6px;
+  }
+
+  /* .nav-links {
+    display: grid;
+    justify-content: center;
+    transition: 1.5s ease;
+  } */
+
+  .logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .bg-customers {
+    grid-template-columns: auto;
+  }
+
+  .customers-main {
+    margin-top: 40px;
+  }
+
+  .user-acc {
+    margin-top: 30px;
+    background: none;
+    display: block;
+    border-radius: 0px;
+    text-shadow: 1px 2px rgb(246, 246, 246);
+  }
+
+  .person-card {
+    min-width: 90vw;
+    height: fit-content;
+    margin: 0px;
+  }
+
+  .personflex {
+    flex-wrap: wrap;
+  }
+
+  .person-logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    align-items: center;
+  }
+
+  #elonimg {
+    width: 15em;
+
+  }
+
+  .person-logo {
+    text-align: center;
+    width: 5em;
+    height: fit-content;
+  }
+
+  .tandc-container {
+    flex-wrap: wrap;
+    margin: 0px 30px;
+  }
+
+  .transfer-container {
+    margin: 0px auto;
+    margin-top: 50px;
+
+  }
+
+  .logo-size {
+    width: 150px;
+  }
+
+  .nav-links>* {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/Transaction.css')}}" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap");
+
+    .hide {
+      position: absolute;
+      right: 100%;
+      transform: translateX(-100%);
+    }
+
+    .bar {
+      background: #f7f7f78a;
+      height: 3px;
+      width: 40px;
+
+    }
+
+    .mb {
+      margin-bottom: 10px;
+    }
+
+    .bar-container {
+      background: transparent;
+      border-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-colour">
+    <div class="flex">
+      <nav class="navcontainer">
+        <div class="logo">
+          <h2>
+            <a href=""><img class="logo-size" src="{{ url_for('static', filename= 'images/logo.png')}}" alt="" /></a>
+          </h2>
+
+          <button class="bar-container" onclick="toggleClass()">
+            <div class="bar mb" onclick="blur()"></div>
+            <div class="bar mb"></div>
+            <div class="bar"></div>
+          </button>
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="{{ url_for('homePage')}}">Home</a></li>
+            <li>
+              <a href="{{ url_for('customersPage')}}">View all Customers</a>
+            </li>
+            <li>
+              <a href="{{url_for('transactionPage')}}">All Transactions</a>
+            </li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="transaction-container">
+        <div class="head-bg" onclick="rotatefunc()">
+          <div class="t-head">
+            <div class="h1-c">
+              <h1 style="
+                    text-align: center;
+                    font-family: Poppins;
+                    color: rgba(255, 255, 255, 0.484);
+                    text-shadow: 1px 2px rgb(246, 246, 246);
+                  ">
+                All Transactions
+              </h1>
+            </div>
+
+            <div class="arrow-c">
+              <img class="arrow-img" src="{{ url_for('static', filename= 'images/down-arrow.png')}}" width="40px" alt=""
+                style="transition: 1s ease" />
+            </div>
+          </div>
+        </div>
+
+        <div class="head-t">
+          <div>
+            <span class="font-reduce">Sender</span>
+            <img src="{{ url_for('static', filename= 'images/message.png')}}" width="40px" alt="" />
+          </div>
+
+          <div class="fake"></div>
+          <div>
+            <span class="font-reduce">receiver</span>
+            <img src="{{ url_for('static', filename= 'images/reciever.png')}}" alt="" width="40px" />
+          </div>
+
+          <div>
+            <span class="font-reduce">Amount</span>
+            <img src="{{ url_for('static', filename= 'images/money.png')}}" width="40px" alt="" />
+          </div>
+
+          <div>
+            <span class="font-reduce">Status</span>
+            <img src="{{ url_for('static', filename= 'images/search(1).png')}}" alt="" width="40px" />
+          </div>
+        </div>
+        <div class="center">
+          <div class="line-h"></div>
+        </div>
+
+        <div class="center">
+          <div class="transfer-contain">
+            <div class="Sender">
+              <h2>Gautam Adani</h2>
+            </div>
+            <div class="receiver">
+              <h2>Elon Musk</h2>
+            </div>
+            <div class="amount">
+              <h2>$125346</h2>
+            </div>
+            <div class="status">passed</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    function toggleClass() {
+      const ul = document.getElementsByClassName("nav-links")[0];
+      ul.classList.toggle('hide');
+    }
+
+
+    if (document.getElementsByClassName("arrow-img")[0].clicked) {
+      function rotatefunc() {
+        let tcontain = document.getElementsByClassName("arrow-img")[0];
+        tcontain.style = "transform: rotate(180deg); transition: 1s ease";
+      }
+    } else {
+      function rotatefunc() {
+        let tcontain = document.getElementsByClassName("arrow-img")[0];
+        tcontain.style = "transform: rotate(0deg); transition: 1s ease";
+      }
+    }
+  </script>
+</body>
+
+</html>

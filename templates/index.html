@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{url_for ('static', filename= 'css/style.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename= 'images/Poppins-Medium.ttf')}}" />
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='mystyle.css')}}" />
+  <title> </title>
+  <style>
+    @import url("https://2.dl.fontke.com/?file=voyage-bold2.ttf&hash=6geUHSaOiROwi0MZHl8FCSSc%2F13DmAIXwewiuMGvJzSVKqVOw1aqZmPozfAG8zx3JdTAdsx6hkw27L4rubkgCJULWyEjz7MOzB2kXDwTV14%3D");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap");
+
+    .hide {
+      position: fixed;
+      right: 100%;
+      transform: translateX(-100%);
+    }
+
+    .bar {
+      background: #f7f7f78a;
+      height: 3px;
+      width: 40px;
+    }
+
+    .mb {
+      margin-bottom: 10px;
+    }
+
+    .bar-container {
+      background: transparent;
+      border-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navcontainer">
+    <div class="logo">
+      <h2>
+        <a href=""><img src="{{ url_for('static', filename= 'images/logo.png')}}" alt="" class="logo-size" /></a>
+      </h2>
+      <button class="bar-container" onclick="toggleClass()">
+        <div class="bar mb" onclick="blur()"></div>
+        <div class="bar mb"></div>
+        <div class="bar"></div>
+      </button>
+    </div>
+    <div class="nav-links">
+      <ul class="ul">
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="{{ url_for('customersPage')}}">View all Customers</a>
+        </li>
+        <li>
+          <a href="{{url_for('transactionPage')}}">All Transactions</a>
+        </li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="text-flex blur">
+    <div class="flex-container">
+      <div class="circle"></div>
+      <div class="container">
+        <div class="outer-card">
+          <div class="card">
+            <div class="card-text">
+              <h1>
+                Experience <br />
+                Premium
+              </h1>
+              <p>
+                Our bank caters to premium individuals <br />
+                who value exceptional service. We strive to provide a
+                banking experience that surpasses expectations through our
+                commitment to excellence. With our premium servicess.
+              </p>
+              <div class="btn">
+                <a href="">Open Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-line blur">
+      <div class="line"></div>
+      <div class="bank-text-container">
+        <h1>
+          <span id="voy" class="bank0">L&M</span>
+          <span class="bank">Bank.</span>
+        </h1>
+        <h2><span class="add-text"></span></h2>
+      </div>
+      </d>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+
+      function toggleClass() {
+        const ul = document.getElementsByClassName("nav-links")[0];
+        ul.classList.toggle('hide');
+      }
+      var slideValue = -0;
+
+      function rotateFunc() {
+
+        console.log("bot");
+
+        let cardDoc2 = document.getElementsByClassName("outer-card");
+
+
+
+        for (let i = 0; i < 3; i++) {
+
+          // cardDoc[i].style =
+
+          //   "transform: translateX" + "(" + slideValue + "px" + ");";
+
+          cardDoc2[i].style =
+
+            "transform: translateX" + "(" + slideValue + "px" + ");";
+
+        }
+
+        slideValue -= 390;
+
+        if (slideValue === -700) {
+
+        }
+
+      }
+
+
+
+
+
+
+
+      function blur() {
+
+        const blur = document.getElementsByClassName("blur")[0];
+
+        blur.style = "filter: blur(5px);";
+
+
+
+      }
+
+
+
+      var typed = new Typed(".add-text", {
+
+        strings: [
+
+          "Secure Growth :)",
+
+          "Invest in You *-*",
+
+          "Your Partner ^_^",
+
+        ],
+
+        typeSpeed: 150,
+
+        backSpeed: 100,
+
+        loop: true,
+
+      });
+
+    </script>
+</body>
+
+</html>

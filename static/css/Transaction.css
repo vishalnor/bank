@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* outline: 1px solid limegreen; */
+}
+
+.logo-size {
+  width: 250px;
+}
+
+.bg-colour {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%);
+}
+
+.logo {
+  font-family: Voyage;
+}
+
+nav {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #ffffff15;
+  height: 100vh;
+  width: max-content;
+}
+
+nav ul li {
+  /* display: inline-block; */
+  font-family: "Poppins";
+  font-weight: 100;
+  list-style: none;
+  padding: 30px 20px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: rgba(240, 248, 255, 0.479);
+}
+
+nav a {
+  text-decoration: none;
+  color: antiquewhite;
+  transition: 0.8s ease;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.transaction-container {
+  margin: 30px 0px;
+  width: 100em;
+}
+
+.transfer-contain {
+  margin: 30px 0px;
+  background: #fbfbfb42;
+  color: rgba(0, 0, 0, 0.446);
+  font-family: "Poppins";
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 5em 5em;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  align-items: center;
+  padding: 20px 80px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.transfer-contain:hover {
+  background: none;
+}
+
+.Sender {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black;
+}
+
+.receiver {
+  padding-left: 50px;
+}
+
+.amount {
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+.status {
+  color: rgb(137, 255, 137);
+  padding-left: 50px;
+}
+
+.t-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1-c {
+  margin: 0px 20px;
+}
+
+.head-bg {
+  background: #00000045;
+  cursor: pointer;
+  margin: 0px 30px;
+  border-radius: 30px;
+  padding: 25px 0px;
+}
+
+.head-t {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  color: rgba(255, 255, 255, 0.523);
+  font-family: "Poppins";
+  font-weight: 100;
+  justify-content: center;
+  grid-gap: 0em 6em;
+  margin: 100px 50px 0px 0px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.line-h {
+  width: 80em;
+  display: grid;
+  justify-content: center;
+  height: 5px;
+  background: #00000073;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width:800px) {
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .head-bg {
+    display: inline-block;
+    display: grid;
+    justify-content: center;
+  }
+
+  .fake {
+    display: none;
+  }
+
+  .center {
+    justify-content: start;
+  }
+
+  .transfer-contain {
+    grid-gap: 0em;
+    height: max-content;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  .center {
+    font-size: 8px;
+
+  }
+
+  .line-h {
+    width: 60vw;
+    display: inline-block;
+    margin: 20px auto;
+  }
+
+  .font-reduce {
+    font-size: 2em;
+  }
+
+  .head-t {
+    grid-template-columns: auto auto auto auto;
+    justify-content: start;
+    font-size: .5em;
+    margin-right: 0px;
+  }
+
+  nav,
+
+  .navcontainer {
+
+    display: block;
+    height: fit-content;
+    width: 100vw;
+  }
+
+
+
+  nav ul li a {
+
+    transition: 1s ease-in-out;
+
+  }
+
+
+
+  .nav-links,
+
+  nav ul li {
+
+    display: block;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    padding: 15px 0px;
+
+
+
+
+
+  }
+
+
+
+  .bar-container {
+
+    display: inline-block;
+
+  }
+
+
+
+  nav ul li a:hover {
+
+
+
+    color: rgb(72, 72, 72);
+
+    background: #ffffffab;
+
+    padding: 10px 20px;
+
+    /* filter: blur(1px); */
+
+    border-radius: 10px 10px;
+
+    position: relative;
+
+    bottom: 6px;
+
+  }
+
+
+
+  .nav-links {
+
+    display: grid;
+
+    justify-content: center;
+
+    transition: 1.5s ease;
+
+  }
+
+
+
+  .logo {
+
+    display: grid;
+
+    grid-template-columns: auto auto;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-right: 50px;
+
+  }
+
+  .h1-c {
+    font-size: 10px;
+  }
+
+  .logo-size {
+    width: 150px;
+  }
+
+
+}
